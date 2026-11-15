@@ -2,6 +2,12 @@
 
 Self-hosted, multi-user Spotify now-playing widget for OBS. Each user signs in with Spotify, picks a style and colour scheme, and receives a private browser-source URL. Playback pauses hide the widget. The widget polls Spotify every 10 seconds. YouTube Music is not supported in this first version.
 
+## Preview
+
+![Card, minimal and bar widget styles shown with an example track](docs/widget-preview.png)
+
+Styles and colour schemes can be combined in the dashboard. The image uses sample track information.
+
 ## Setup
 
 1. Create an app in the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard). Set its redirect URI to `https://YOUR-DOMAIN/callback` exactly.
