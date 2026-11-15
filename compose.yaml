@@ -1,0 +1,11 @@
+services:
+  now-playing:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "${BIND_ADDRESS:-0.0.0.0}:${PORT:-8090}:8000"
+    volumes:
+      - widget-data:/data
+volumes:
+  widget-data:
