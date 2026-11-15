@@ -12,3 +12,7 @@ Self-hosted, multi-user Spotify now-playing widget for OBS. Each user signs in w
 Spotify development-mode apps have eligibility and user limits; add users in the dashboard where required. See [Spotify's development mode guide](https://developer.spotify.com/documentation/web-api/tutorials/february-2026-migration-guide). Spotify credentials and user refresh tokens are stored in the persistent Docker volume; protect and back it up. Treat widget URLs as secrets; rotate one in the dashboard if exposed. A new link invalidates the old one.
 
 The reverse proxy must terminate HTTPS and forward requests to the app. `BASE_URL` controls OAuth redirects and links, independently of proxy IP. Keep `.env` private and never commit it.
+
+## License
+
+This project is licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE).
